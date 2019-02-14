@@ -31,7 +31,7 @@ mongoose
 var Usuario = require("./lib/Usuario");
 
 app.get("/Usuario", (req, res) => {
-  Usuario.getUsuario(req, res);
+  Usuario.getUsuarios(req, res);
 });
 
 app.get("/Usuario/:id", (req, res) => {
@@ -52,7 +52,7 @@ app.delete("/Usuario/:id", (req, res) => {
 
 var eventos = require("./lib/eventos");
 app.get("/eventos", (req, res) => {
-  eventos.geteventos(req, res);
+  eventos.geteventoss(req, res);
 });
 
 app.get("/eventos/:id", (req, res) => {
@@ -74,7 +74,7 @@ app.delete("/eventos/:id", (req, res) => {
 var atracciones = require("./lib/atracciones");
 
 app.get("/atracciones", (req, res) => {
-  atracciones.getatracciones(req, res);
+  atracciones.getatraccioness(req, res);
 });
 
 app.get("/atracciones/:id", (req, res) => {
@@ -96,7 +96,7 @@ app.delete("/atracciones/:id", (req, res) => {
 var talentos = require("./lib/talentos");
 
 app.get("/talentos", (req, res) => {
-  talentos.gettalentos(req, res);
+  talentos.gettalentoss(req, res);
 });
 
 app.get("/talentos/:id", (req, res) => {
@@ -118,7 +118,7 @@ app.delete("/talentos/:id", (req, res) => {
 var publicaciones = require("./lib/publicaciones");
 
 app.get("/publicaciones", (req, res) => {
-  publicaciones.getpublicaciones(req, res);
+  publicaciones.getpublicacioness(req, res);
 });
 
 app.get("/publicaciones/:id", (req, res) => {
@@ -140,7 +140,7 @@ app.delete("/publicaciones/:id", (req, res) => {
 var comentarios = require("./lib/comentarios");
 
 app.get("/comentarios", (req, res) => {
-  comentarios.getcomentarios(req, res);
+  comentarios.getcomentarioss(req, res);
 });
 
 app.get("/comentarios/:id", (req, res) => {
